@@ -702,6 +702,79 @@ p {
 }
 
 /* ========================================
+   SOFTWARE KNOWLEDGE
+   ======================================== */
+.software-knowledge-card {
+  position: relative;
+}
+
+.software-skill {
+  padding: 12px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: rgba(26, 188, 156, 0.04);
+  transition: var(--transition);
+}
+
+body.dark-mode .software-skill {
+  background: rgba(26, 188, 156, 0.08);
+}
+
+.software-skill:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(26, 188, 156, 0.5);
+}
+
+.software-skill-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.software-skill-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.software-skill-logo {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 10px;
+  background: rgba(26, 188, 156, 0.08);
+  border: 1px solid rgba(26, 188, 156, 0.25);
+  padding: 6px;
+  object-fit: contain;
+}
+
+.software-skill-percent {
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 0.2px;
+}
+
+.software-progress {
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+body.dark-mode .software-progress {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.software-progress-bar {
+  height: 100%;
+  border-radius: 999px;
+}
+
+/* ========================================
    PORTFOLIO & PROJECT CARDS
    ======================================== */
 
